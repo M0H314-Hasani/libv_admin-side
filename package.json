@@ -1,0 +1,35 @@
+{
+  "name": "libv_admin-side",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5000",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs",
+    "lint-fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix",
+    "jsdoc": "jsdoc -c ./jsdocrc.json"
+  },
+  "dependencies": {
+    "pinia": "^2.0.13",
+    "vue": "^3.2.37",
+    "vue-plugin-load-script": "^2.1.1",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "better-docs": "^2.7.2",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "jsdoc": "^3.6.10",
+    "jsdoc-vuejs": "git+https://github.com/DaveTorrey/jsdoc-vuejs.git",
+    "postcss-nesting": "^10.1.8",
+    "prettier": "^2.5.1",
+    "sass": "^1.52.2",
+    "vite": "^2.9.10"
+  }
+}

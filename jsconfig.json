@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "esnext",
+		"moduleResolution": "node",
+		"types": [
+			"vite/client"
+		],
+		"checkJs": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		},
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"src/assets/**/*"
+	]
+}

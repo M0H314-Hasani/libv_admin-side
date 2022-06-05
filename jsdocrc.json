@@ -1,0 +1,25 @@
+{
+    "plugins": [
+        "plugins/markdown",
+        "node_modules/jsdoc-vuejs",
+        "node_modules/better-docs/category"
+    ],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["src"],
+        "includePattern": ".(vue|js)$"
+    },
+    "sourceType": "module",
+    "allowUnknownTags": ["category"],
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true
+    },
+    "opts": {
+        "template": "node_modules/better-docs",
+        "encoding": "utf8",
+        "destination": "./Documentation",
+        "recurse": true,
+        "readme": "README.md"
+    }
+}
