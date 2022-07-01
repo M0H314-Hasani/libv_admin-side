@@ -10,6 +10,7 @@
     "jsdoc": "jsdoc -c ./jsdocrc.json -p"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pinia": "^2.0.13",
     "vue": "^3.2.37",
     "vue-plugin-load-script": "^2.1.1",
