@@ -7,7 +7,7 @@
     "preview": "vite preview --port 5000",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs",
     "lint-fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix",
-    "jsdoc": "jsdoc -c ./jsdocrc.json"
+    "jsdoc": "jsdoc -c ./jsdocrc.json -p"
   },
   "dependencies": {
     "pinia": "^2.0.13",
