@@ -29,6 +29,11 @@ module.exports = {
     'max-len': 'off',
     'no-plusplus': 'off',
     'import/prefer-default-export': 'off',
+    'dot-notation': [
+      'error',
+      { allowPattern: '^[A-Za-z0-9]+(_[A-Za-z0-9]+)+$' },
+    ],
+    'prefer-destructuring': 'off',
   },
   parserOptions: {
     ecmaVersion: 'latest',
