@@ -8,6 +8,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import API from '@/utils/api/mainClient';
 
 const ExternalStyleLoaded = ref(false);
+
+API.get('sanctum/csrf-cookie');
 </script>
