@@ -13,9 +13,11 @@
 				"./src/*"
 			]
 		},
+		"resolveJsonModule": true
 	},
 	"include": [
-		"src/**/*"
+		"src/**/*",
+		"@types/**/*"
 	],
 	"exclude": [
 		"src/assets/**/*"

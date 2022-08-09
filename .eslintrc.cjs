@@ -34,8 +34,11 @@ module.exports = {
       { allowPattern: '^[A-Za-z0-9]+(_[A-Za-z0-9]+)+$' },
     ],
     'prefer-destructuring': 'off',
+    'class-methods-use-this': 'off',
+    'consistent-return': 'off',
   },
   parserOptions: {
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -46,5 +49,9 @@ module.exports = {
         extensions: ['.js', '.vue'],
       },
     },
+  },
+  globals: {
+    $router: true,
+    $trans: true,
   },
 };
