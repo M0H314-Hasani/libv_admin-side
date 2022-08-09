@@ -4,14 +4,17 @@
       <div class="text-center">
         <img
           class="img-error"
-          src="/assets/images/samples/error-404.svg"
+          :src="(() => `/assets/images/samples/error-${props.code}.svg`)()"
           alt="Not Found"
         />
-        <h1 class="error-title">NOT FOUND</h1>
-        <p class="fs-5 text-gray-600">The page you are looking not found.</p>
-        <a href="index.html" class="btn btn-lg btn-outline-primary mt-3"
-          >Go Home</a
+        <h1 class="error-title">{{ props.title }}</h1>
+        <p class="fs-5 text-gray-600">{{ props.description }}</p>
+        <button
+          @click="router.back()"
+          class="btn btn-lg btn-outline-primary mt-3"
         >
+          بازگشت
+        </button>
       </div>
     </div>
   </HttpErrorLayout>
@@ -20,6 +23,11 @@
 
 <script setup>
 import HttpErrorLayout from '@/views/layouts/HttpErrorLayout.vue';
+import { useRouter } from 'vue-router';
+
+const props = defineProps(['code', 'title', 'description']);
+
+const router = useRouter();
 </script>
 
 <script>

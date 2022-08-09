@@ -27,6 +27,7 @@ const router = createRouter({
       path: '/error',
       name: 'Error',
       component: Error,
+      props: true,
     },
     {
       path: '/',
